@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "aUt2hdJT7J0eeCO1BUyNyy8jzOJoQ5LHh3vi2NezaMrIOz0jVdhLHE+YfiDlMBJeIvdnk9DkPOu8UwO6Nt7lRw==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nlines\\source\\repos\\OutLook_Scrape2\\OutLook_Scrape2.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nlines\\.nuget\\packages\\microsoft.office.interop.outlook\\15.0.4797.1004\\microsoft.office.interop.outlook.15.0.4797.1004.nupkg.sha512"
+  ],
+  "logs": []
+}

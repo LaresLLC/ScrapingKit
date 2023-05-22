@@ -1,0 +1,17 @@
+C:\Users\nlines\source\repos\OutLook_Scrape2\obj\Debug\net6.0\OutLook_Scrape2.csproj.AssemblyReference.cache
+C:\Users\nlines\source\repos\OutLook_Scrape2\obj\Debug\net6.0\OutLook_Scrape2.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\nlines\source\repos\OutLook_Scrape2\obj\Debug\net6.0\OutLook_Scrape2.AssemblyInfoInputs.cache
+C:\Users\nlines\source\repos\OutLook_Scrape2\obj\Debug\net6.0\OutLook_Scrape2.AssemblyInfo.cs
+C:\Users\nlines\source\repos\OutLook_Scrape2\obj\Debug\net6.0\OutLook_Scrape2.csproj.CoreCompileInputs.cache
+C:\Users\nlines\source\repos\OutLook_Scrape2\bin\Debug\net6.0\OutLook_Scrape2.exe
+C:\Users\nlines\source\repos\OutLook_Scrape2\bin\Debug\net6.0\OutLook_Scrape2.deps.json
+C:\Users\nlines\source\repos\OutLook_Scrape2\bin\Debug\net6.0\OutLook_Scrape2.runtimeconfig.json
+C:\Users\nlines\source\repos\OutLook_Scrape2\bin\Debug\net6.0\OutLook_Scrape2.dll
+C:\Users\nlines\source\repos\OutLook_Scrape2\bin\Debug\net6.0\OutLook_Scrape2.pdb
+C:\Users\nlines\source\repos\OutLook_Scrape2\bin\Debug\net6.0\Microsoft.Office.Interop.Outlook.dll
+C:\Users\nlines\source\repos\OutLook_Scrape2\obj\Debug\net6.0\OutLook_Scrape2.csproj.CopyComplete
+C:\Users\nlines\source\repos\OutLook_Scrape2\obj\Debug\net6.0\OutLook_Scrape2.dll
+C:\Users\nlines\source\repos\OutLook_Scrape2\obj\Debug\net6.0\refint\OutLook_Scrape2.dll
+C:\Users\nlines\source\repos\OutLook_Scrape2\obj\Debug\net6.0\OutLook_Scrape2.pdb
+C:\Users\nlines\source\repos\OutLook_Scrape2\obj\Debug\net6.0\OutLook_Scrape2.genruntimeconfig.cache
+C:\Users\nlines\source\repos\OutLook_Scrape2\obj\Debug\net6.0\ref\OutLook_Scrape2.dll

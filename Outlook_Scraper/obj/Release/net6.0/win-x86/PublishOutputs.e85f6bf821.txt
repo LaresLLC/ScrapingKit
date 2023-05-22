@@ -1,0 +1,2 @@
+C:\Users\nlines\source\repos\OutLook_Scrape2\bin\Release\net6.0\publish\win-x86\OutLook_Scrape2.pdb
+C:\Users\nlines\source\repos\OutLook_Scrape2\bin\Release\net6.0\publish\win-x86\OutLook_Scrape2.exe

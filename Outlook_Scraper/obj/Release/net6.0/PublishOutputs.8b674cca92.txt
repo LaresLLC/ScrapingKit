@@ -1,0 +1,6 @@
+C:\Users\nlines\source\repos\OutLook_Scrape2\bin\Release\net6.0\publish\OutLook_Scrape2.exe
+C:\Users\nlines\source\repos\OutLook_Scrape2\bin\Release\net6.0\publish\OutLook_Scrape2.dll
+C:\Users\nlines\source\repos\OutLook_Scrape2\bin\Release\net6.0\publish\OutLook_Scrape2.deps.json
+C:\Users\nlines\source\repos\OutLook_Scrape2\bin\Release\net6.0\publish\OutLook_Scrape2.runtimeconfig.json
+C:\Users\nlines\source\repos\OutLook_Scrape2\bin\Release\net6.0\publish\OutLook_Scrape2.pdb
+C:\Users\nlines\source\repos\OutLook_Scrape2\bin\Release\net6.0\publish\Microsoft.Office.Interop.Outlook.dll
