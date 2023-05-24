@@ -16,6 +16,22 @@ It helps identify files that contain specific keywords in both emails via the Ou
 
 Read this blog post for more detailed information Add-Link
 
+Compile overview
+
+Required NuGet Pakages
+
+1. Right-click on project 'Outlook_and_DC_Scraper' under Solution Explorer and select Manage NuGet Packages.
+2. Click on Browse search for the below pakages and install.
+
+```
+Microsoft.Office.Interop.Outlook" Version="15.0.4797.1004"
+MicrosoftOfficeCore" Version="15.0.0"
+System.DirectoryServices" Version="7.0.1"
+System.DirectoryServices.AccountManagement" Version="7.0.0"
+```
+
+TargetFramework > net6.0
+
 Compile then execute with either PowerShell, CMD or if you have physical access simply double click it.
 The following menu screen will load.
 
