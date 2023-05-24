@@ -1,2 +1,0 @@
-C:\Users\nlines\source\repos\Outlook_and_DC_Scraper_Combined\bin\Release\net6.0\publish\win-x86\Outlook_and_DC_Scraper_Combined.pdb
-C:\Users\nlines\source\repos\Outlook_and_DC_Scraper_Combined\bin\Release\net6.0\publish\win-x86\Outlook_and_DC_Scraper_Combined.exe
