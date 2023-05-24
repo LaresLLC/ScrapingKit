@@ -47,12 +47,19 @@ Please select an option:
 1. Run Outlook Email Search
 2. Run Active Directory Keyword Search
 3. Exit
+
 1
+
 Enter the email address to forward matching emails:
+
 dhfrdfdg@REDACTED.com
+
 Would you like to only scrape for the following keywords: 'password', 'security', 'confidential', 'VPN', and 'WIFI' (Y/N)
+
 Y
+
 Matching email found. Forwarded the email information to dhfrdfdg@REDACTED.com
+
 Matching email found. Forwarded the email information to dhfrdfdg@REDACTED.com
 
 ### Example Option 1 using user defined keywords
@@ -63,11 +70,19 @@ Please select an option:
 1. Run Outlook Email Search
 2. Run Active Directory Keyword Search
 3. Exit
+
 1
+
 Enter the email address to forward matching emails:
+
 dhfrdfdg@REDACTED.com
+
 Would you like to only scrape for the following keywords: 'password', 'security', 'confidential', 'VPN', and 'WIFI' (Y/N)
+
 n
+
 Enter additional keywords (comma-separated):
+
 happy1
+
 Matching email found. Forwarded the email information to dhfrdfdg@REDACTED.com
