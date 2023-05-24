@@ -43,7 +43,7 @@ Please select an option:
 
 After selecting option 1 you will be requested to add a destination email address, all matches will be forwarded to the added address.
  
-Please select an option:
+```Please select an option:
 1. Run Outlook Email Search
 2. Run Active Directory Keyword Search
 3. Exit
@@ -57,7 +57,7 @@ Would you like to only scrape for the following keywords: 'password', 'security'
 
 Y
 
-Matching email found. Forwarded the email information to dhfrdfdg@REDACTED.com
+Matching email found. Forwarded the email information to dhfrdfdg@REDACTED.com```
 
 
 ### Example Option 1 using user defined keywords
@@ -81,4 +81,7 @@ n
 Enter additional keywords (comma-separated):
 happy1
 
-Matching email found. Forwarded the email information to dhfrdfdg@REDACTED.com```
+Matching email found. Forwarded the email information to dhfrdfdg@REDACTED.com
+
+```
+
