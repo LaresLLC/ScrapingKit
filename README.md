@@ -64,7 +64,7 @@ Matching email found. Forwarded the email information to dhfrdfdg@REDACTED.com
 
 You can select the default keywords or add your own keywords by selecting N at the prompt.
 
-Please select an option:
+```Please select an option:
 1. Run Outlook Email Search
 2. Run Active Directory Keyword Search
 3. Exit
@@ -81,4 +81,4 @@ n
 Enter additional keywords (comma-separated):
 happy1
 
-Matching email found. Forwarded the email information to dhfrdfdg@REDACTED.com
+Matching email found. Forwarded the email information to dhfrdfdg@REDACTED.com```
