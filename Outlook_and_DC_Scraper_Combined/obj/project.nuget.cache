@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "dgSpecHash": "NyACqmSWNk9a/5q7YN/nh1GfQ7ZpxRuUY35mT08AfkKuR1eDSDXGIzhsFc613yVUrgS9nx/IwJnouyieGb7dCA==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\nlines\\source\\repos\\Outlook_and_DC_Scraper_Combined\\Outlook_and_DC_Scraper_Combined.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\nlines\\.nuget\\packages\\microsoft.office.interop.outlook\\15.0.4797.1004\\microsoft.office.interop.outlook.15.0.4797.1004.nupkg.sha512",
+    "C:\\Users\\nlines\\.nuget\\packages\\microsoft.win32.systemevents\\7.0.0\\microsoft.win32.systemevents.7.0.0.nupkg.sha512",
+    "C:\\Users\\nlines\\.nuget\\packages\\microsoftofficecore\\15.0.0\\microsoftofficecore.15.0.0.nupkg.sha512",
+    "C:\\Users\\nlines\\.nuget\\packages\\system.configuration.configurationmanager\\7.0.0\\system.configuration.configurationmanager.7.0.0.nupkg.sha512",
+    "C:\\Users\\nlines\\.nuget\\packages\\system.directoryservices\\7.0.1\\system.directoryservices.7.0.1.nupkg.sha512",
+    "C:\\Users\\nlines\\.nuget\\packages\\system.directoryservices.accountmanagement\\7.0.0\\system.directoryservices.accountmanagement.7.0.0.nupkg.sha512",
+    "C:\\Users\\nlines\\.nuget\\packages\\system.directoryservices.protocols\\7.0.0\\system.directoryservices.protocols.7.0.0.nupkg.sha512",
+    "C:\\Users\\nlines\\.nuget\\packages\\system.drawing.common\\7.0.0\\system.drawing.common.7.0.0.nupkg.sha512",
+    "C:\\Users\\nlines\\.nuget\\packages\\system.security.cryptography.protecteddata\\7.0.0\\system.security.cryptography.protecteddata.7.0.0.nupkg.sha512",
+    "C:\\Users\\nlines\\.nuget\\packages\\system.security.permissions\\7.0.0\\system.security.permissions.7.0.0.nupkg.sha512",
+    "C:\\Users\\nlines\\.nuget\\packages\\system.windows.extensions\\7.0.0\\system.windows.extensions.7.0.0.nupkg.sha512"
+  ],
+  "logs": [
+    {
+      "code": "NU1701",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'MicrosoftOfficeCore 15.0.0' was restored using '.NETFramework,Version=v4.6.1, .NETFramework,Version=v4.6.2, .NETFramework,Version=v4.7, .NETFramework,Version=v4.7.1, .NETFramework,Version=v4.7.2, .NETFramework,Version=v4.8, .NETFramework,Version=v4.8.1' instead of the project target framework 'net6.0'. This package may not be fully compatible with your project.",
+      "libraryId": "MicrosoftOfficeCore",
+      "targetGraphs": [
+        "net6.0"
+      ]
+    }
+  ]
+}
