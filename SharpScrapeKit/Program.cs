@@ -169,6 +169,9 @@ class Program
         {
             Console.WriteLine("Invalid domain specified.");
             return;
+        } else
+        {
+            Console.WriteLine($"Using domain: {domain}");
         }
 
 
