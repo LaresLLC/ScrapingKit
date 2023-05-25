@@ -1,14 +1,13 @@
 # ScrapingKit
-![image](https://github.com/LaresLLC/ScrapingKit/assets/5783068/d9ce4b16-da3b-4e87-be81-8471b2df2a7f)
 
 Scraping Kit is made up of several tools for scraping services for keywords, useful for initial enumeration of Domain Controllers or if you have popped a user's desktop, their outlook client. Each component has a function currently supports scraping and emailing the contents to a designated email address for easy exfiltration.
 
-The kit contains one tool currently with more to come in the coming months and more customisation options.
+The kit contains two tools currently with more to come in the coming months and more customisation options.
 
+- SharpScrapeKit
+- PSScrapeKit
 
-- Outlook_and_DC_Scraper
-
-## Outlook and DC Scraper (Super Scraper)
+## SharpScrapeKit
 
 ### What it is
 
@@ -16,13 +15,13 @@ It helps identify files that contain specific keywords in both emails via the Ou
 
 ### How to setup/use
 
-Read this blog post for more detailed information Add-Link
+Read this blog post for more detailed information labs.
 
-Compile overview
+https://lares.com/introducing-the-scraping-kit/
 
-Required NuGet Pakages
+#### Required NuGet Pakages
 
-1. Right-click on project 'Outlook_and_DC_Scraper' under Solution Explorer and select Manage NuGet Packages.
+1. Right-click on project 'ScrapeKit' under Solution Explorer and select Manage NuGet Packages.
 2. Click on Browse search for the below pakages and install.
 
 ```
@@ -32,7 +31,7 @@ System.DirectoryServices" Version="7.0.1"
 System.DirectoryServices.AccountManagement" Version="7.0.0"
 ```
 
-TargetFramework > net6.0
+`TargetFramework > net6.0`
 
 Compile then execute with either PowerShell, CMD or if you have physical access simply double click it.
 The following menu screen will load.
@@ -44,6 +43,7 @@ Please select an option:
 3. Exit
 ```
 
+The Sharp implementation of the tool will pull the domain from environmental variables or if you want to specify it manually it will prompt you to do so.
 
 ### Example Option 1 using the default keywords
 
@@ -83,7 +83,7 @@ Matching email found. Forwarded the email information to dhfrdfdg@REDACTED.com
 ### Example Option 2 DC scrape with user defined keyword
 
 ```
-C:\Users\user2>C:\Users\user2\Desktop\Outlook_and_DC_Scraper_Combined.exe
+C:\Users\user2>C:\Users\user2\Desktop\ScrapeKit.exe
 Please select an option:
 1. Run Outlook Email Search
 2. Run Active Directory Keyword Search
@@ -105,3 +105,29 @@ sfsfisfjhsf sfjbsfj sf sf
 username: happy1
 password: test1
 ```
+
+## PSScrapeKit
+
+### What it is
+
+PSScrapeKit is an outlook scraper written in powershell, it will connect to the user's outlook client, search for keywords then queue up any interesting emails and send to an email of your choosing.
+
+### How to Use
+
+Simply import the module then execute it:
+
+```
+ipmo .\OutlookScrape.ps1
+Invoke-OutlookScrape
+```
+
+It will give you two options:
+```
+Select keyword option:
+1. User-defined keywords
+2. Default keywords (password, security, confidential, VPN, WIFI)
+Enter the keyword option: 
+```
+
+Simply select an option then specify an email and the rest will queue up and do its thing.
+

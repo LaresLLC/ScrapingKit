@@ -19,7 +19,7 @@ class Program
         Console.WriteLine("Please select an option:");
         Console.WriteLine("1. Run Outlook Email Search");
         Console.WriteLine("2. Run Active Directory Keyword Search");
-        Console.WriteLine("3. Exit");
+        Console.WriteLine("9. Exit");
 
         string option = Console.ReadLine();
 
@@ -31,7 +31,7 @@ class Program
             case "2":
                 RunADKeywordSearch();
                 break;
-            case "3":
+            case "9":
                 return;
             default:
                 Console.WriteLine("Invalid option. Please try again.");
@@ -163,8 +163,15 @@ class Program
     {
         Console.WriteLine("Please provide at least one keyword as a command-line argument.");
         string[] arguments = Console.ReadLine().Split(' ');
+        string domain = GetDomain();
 
-        string domain = Environment.GetEnvironmentVariable("USERDNSDOMAIN");
+        if (string.IsNullOrEmpty(domain))
+        {
+            Console.WriteLine("Invalid domain specified.");
+            return;
+        }
+
+
         DomainController domainController = Domain.GetCurrentDomain().DomainControllers.Cast<DomainController>().FirstOrDefault();
         string domainControllerName = domainController?.Name;
         string sysvolPath = $"\\\\{domainControllerName}\\SYSVOL\\{domain}";
@@ -228,6 +235,27 @@ class Program
 
         // Show the menu again
         ShowMenu();
+    }
+
+    static string GetDomain()
+    {
+        string domain = Environment.GetEnvironmentVariable("USERDNSDOMAIN");
+
+        // Check if the domain is specified as a command-line argument
+        if (Environment.GetCommandLineArgs().Length >= 2)
+        {
+            domain = Environment.GetCommandLineArgs()[1];
+        }
+
+        // Check if the domain is specified by the user
+        Console.WriteLine("Enter the domain (or press Enter to use the default):");
+        string userInput = Console.ReadLine();
+        if (!string.IsNullOrEmpty(userInput))
+        {
+            domain = userInput;
+        }
+
+        return domain;
     }
 
     static void ReleaseComObject(object obj)
