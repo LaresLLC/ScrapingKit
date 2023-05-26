@@ -1,6 +1,7 @@
 # ScrapingKit
 ## v1.0 Release
-![image](https://github.com/LaresLLC/ScrapingKit/assets/5783068/bef6f3b1-018f-4e64-9893-041022298c06)
+![image](https://github.com/LaresLLC/ScrapingKit/assets/5783068/4655e287-cc3c-480c-97a7-e280c9fcb149)
+
 
 Scraping Kit is made up of several tools for scraping services for keywords, useful for initial enumeration of Domain Controllers or if you have popped a user's desktop, their outlook client. Each component has a function currently supports scraping and emailing the contents to a designated email address for easy exfiltration.
 
