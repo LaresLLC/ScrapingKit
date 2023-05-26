@@ -142,4 +142,5 @@ Enter the keyword option:
 Simply select an option then specify an email and the rest will queue up and do its thing.
 
 ### Example execution:
+![image](https://github.com/LaresLLC/ScrapingKit/assets/5783068/95482990-4fce-4fce-aa83-0cb87a2804d8)
 
