@@ -18,7 +18,7 @@ It helps identify files that contain specific keywords in both emails via the Ou
 
 Read this blog post for more detailed information labs.
 
-https://lares.com/introducing-the-scraping-kit/
+https://labs.lares.com/introducing-the-scraping-kit/
 
 #### Required NuGet Pakages
 
