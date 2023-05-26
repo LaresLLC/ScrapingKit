@@ -110,10 +110,20 @@ password: test1
 
 ### What it is
 
-PSScrapeKit is an outlook scraper written in powershell, it will connect to the user's outlook client, search for keywords then queue up any interesting emails and send to an email of your choosing.
+PSScrapeKit is a powershell implementation of ScrapeKit, it consists of two files; DCScraper & OutlookScrape. Each has a specific function for scraping either a DC or Outlook. The outlook scraper will connect to the user's outlook client, search for keywords then queue up any interesting emails and send to an email of your choosing. Whereas the DC one will connect to sysvol and look for specific keywords or a default list.
+
+- DCScrape.ps1
+- OutlookScrape.ps1
 
 ### How to Use
 
+#### DCScrape
+Execute the script from a domain connected machine or in a runas session to crawl the DC;
+
+```
+.\DCScrape.ps1
+```
+#### OutlookScrape
 Simply import the module then execute it:
 
 ```
@@ -130,4 +140,6 @@ Enter the keyword option:
 ```
 
 Simply select an option then specify an email and the rest will queue up and do its thing.
+
+### Example execution:
 
