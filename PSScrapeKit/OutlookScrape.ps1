@@ -1,3 +1,6 @@
+# LaresLLC PSScrapingKit 2023
+# Neil Lines & Andy Gill
+# v1.0 Release
 function Invoke-OutlookScrape {
     $outlook = New-Object -ComObject Outlook.Application
     $namespace = $outlook.GetNamespace("MAPI")

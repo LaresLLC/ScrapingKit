@@ -1,4 +1,7 @@
-﻿using System;
+﻿// LaresLLC ScrapingKit 2023
+// Neil Lines & Andy Gill
+// v1.0 Release
+using System;
 using System.Collections.Generic;
 using System.DirectoryServices;
 using System.DirectoryServices.AccountManagement;
