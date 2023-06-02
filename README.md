@@ -120,12 +120,8 @@ PSScrapeKit is a powershell implementation of ScrapeKit, it consists of two file
 
 ### How to Use
 
-#### DCScrape
-Execute the script from a domain connected machine or in a runas session to crawl the DC;
+See [PSScrapeKit](https://github.com/LaresLLC/ScrapingKit/tree/main/PSScrapeKit)
 
-```
-.\DCScrape.ps1
-```
 #### OutlookScrape
 Simply import the module then execute it:
 
