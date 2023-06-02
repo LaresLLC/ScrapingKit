@@ -7,8 +7,8 @@ Scraping Kit is made up of several tools for scraping services for keywords, use
 
 The kit contains two tools currently with more to come in the coming months and more customisation options.
 
-- SharpScrapeKit
-- PSScrapeKit
+- [SharpScrapeKit](https://github.com/LaresLLC/ScrapingKit/tree/main/SharpScrapeKit)
+- [PSScrapeKit](https://github.com/LaresLLC/ScrapingKit/tree/main/PSScrapeKit)
 
 ## SharpScrapeKit
 
