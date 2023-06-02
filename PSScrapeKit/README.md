@@ -15,17 +15,20 @@ PSScrapeKit is a PowerShell implementation of ScrapeKit, it consists of two file
 Execute the script from a domain-connected machine or in a runas session to crawl the DC;
 
 ```
-. .\DCScrape-Tidied.ps1
+. .\PSScrapeKit.ps1
 ```
-With default settings
+
+Search DCs with default settings
 `Invoke-SearchDCs`
 
-Specifying a custom domain
+Search DCs specifying a custom domain
 `Invoke-SearchDCs -domain "my.custom.domain"`
 
 Specifying custom initial keywords, a custom domain, and listing only filenames
 `Invoke-SearchDCs -initialKeywords @('keyword1', 'keyword2') -domain "my.custom.domain" -onlyFileName $true`
 
+Search Outlook
+`Invoke-OutlookScrape`
 
 Just a quick demo of DCScrape-Tidied.ps1 being executed across my domain lab.
 
