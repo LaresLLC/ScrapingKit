@@ -1,5 +1,5 @@
 # ScrapingKit
-## v1.0 Release
+## v1.01 Release
 ![image](https://github.com/LaresLLC/ScrapingKit/assets/5783068/4655e287-cc3c-480c-97a7-e280c9fcb149)
 
 

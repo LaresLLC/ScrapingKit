@@ -2,20 +2,32 @@
 
 ### What it is
 
-PSScrapeKit is a powershell implementation of ScrapeKit, it consists of two files; DCScraper & OutlookScrape. Each has a specific function for scraping either a DC or Outlook. The outlook scraper will connect to the user's outlook client, search for keywords then queue up any interesting emails and send to an email of your choosing. Whereas the DC one will connect to sysvol and look for specific keywords or a default list.
+PSScrapeKit is a PowerShell implementation of ScrapeKit, it consists of two files; DCScraper & OutlookScrape. Each has a specific function for scraping either a DC or Outlook. The Outlook scraper will connect to the user's Outlook client, search for keywords then queue up any interesting emails and send to an email of your choosing. Whereas the DC one will connect to SYSVOL and look for specific keywords or a default list.
 
-- DCScrape.ps1
-- OutlookScrape.ps1
+- PSScrapeKit.ps1 - Combined functions for both Outlook and DCScrape, this will expand with other functions as we progress.
+    - DCScrape-OneLiner.ps1 - Oneliner for ease of paste and pwn
+    - DCScrape-Tidied.ps1 - Broken out script in function form to allow for better querying
+    - OutlookScrape.ps1 - Function for scraping Outlook
 
 ### How to Use
 
 #### DCScrape
-Execute the script from a domain connected machine or in a runas session to crawl the DC;
+Execute the script from a domain-connected machine or in a runas session to crawl the DC;
 
 ```
-.\DCScrape.ps1
+. .\DCScrape-Tidied.ps1
 ```
-Just a quick demo of DCScrape_Line_Breaks_For_Readability.ps1 being executed across my domain lab.
+With default settings
+`Invoke-SearchDCs`
+
+Specifying a custom domain
+`Invoke-SearchDCs -domain "my.custom.domain"`
+
+Specifying custom initial keywords, a custom domain, and listing only filenames
+`Invoke-SearchDCs -initialKeywords @('keyword1', 'keyword2') -domain "my.custom.domain" -onlyFileName $true`
+
+
+Just a quick demo of DCScrape-Tidied.ps1 being executed across my domain lab.
 
 Open https://raw.githubusercontent.com/LaresLLC/ScrapingKit/main/PSScrapeKit/DCScrape_Line_Breaks_For_Readability.ps1 then copy and paste into a PowerShell session.
 
