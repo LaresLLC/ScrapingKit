@@ -1,9 +1,10 @@
 # ScrapingKit
 ## v1.01 Release
+Brought to you by [Neil Lines](https://twitter.com/myexploit2600) & [Andy Gill](https://twitter.com/ZephrFish) at [Lares Labs](https://labs.lares.com).
 ![image](https://github.com/LaresLLC/ScrapingKit/assets/5783068/4655e287-cc3c-480c-97a7-e280c9fcb149)
 
 
-Scraping Kit is made up of several tools for scraping services for keywords, useful for initial enumeration of Domain Controllers or if you have popped a user's desktop, their outlook client. Each component has a function currently supports scraping and emailing the contents to a designated email address for easy exfiltration.
+Scraping Kit is made up of several tools for scraping services for keywords, useful for initial enumeration of Domain Controllers or if you have popped a user's desktop, their outlook client. Each component has a function that currently supports scraping and emailing the contents to a designated email address for easy exfiltration.
 
 The kit contains two tools currently with more to come in the coming months and more customisation options.
 
@@ -145,3 +146,7 @@ Simply select an option then specify an email and the rest will queue up and do 
 ![image](https://github.com/LaresLLC/ScrapingKit/assets/5783068/1357b27c-bad5-453b-b4cf-ed244d39d21d)
 
 
+## Future Plans
+- Share Scraping Module, similar to snaffler but more opsec safe
+- Scraping contents of specific files on DCs/Other hosts
+- Other automation and enumeration
