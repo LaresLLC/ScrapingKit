@@ -19,7 +19,7 @@ It helps identify files that contain specific keywords in both emails via the Ou
 
 ### How to setup/use
 
-Read this blog post for more detailed information over on [Lares Labs](https://labs.lares.com/) (Blog post goes live Tuesday 30th May 08:00 UTC).
+Read this blog post for more detailed information over on [Lares Labs](https://labs.lares.com/)
 
 [https://labs.lares.com/introducing-scraping-kit/](https://labs.lares.com/introducing-scraping-kit/)
 
