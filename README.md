@@ -6,7 +6,7 @@ Brought to you by [Neil Lines](https://twitter.com/myexploit2600) & [Andy Gill](
 
 Scraping Kit is made up of several tools for scraping services for keywords, useful for initial enumeration of Domain Controllers or if you have popped a user's desktop, their outlook client. Each component has a function that currently supports scraping and emailing the contents to a designated email address for easy exfiltration.
 
-The kit contains two tools currently with more to come in the coming months and more customisation options.
+The kit contains two tools currently, with more to come in the coming months and more customisation options.
 
 - [SharpScrapeKit](https://github.com/LaresLLC/ScrapingKit/tree/main/SharpScrapeKit)
 - [PSScrapeKit](https://github.com/LaresLLC/ScrapingKit/tree/main/PSScrapeKit)
@@ -23,10 +23,10 @@ Read this blog post for more detailed information over on [Lares Labs](https://l
 
 [https://labs.lares.com/introducing-scraping-kit/](https://labs.lares.com/introducing-scraping-kit/)
 
-#### Required NuGet Pakages
+#### Required NuGet Packages
 
-1. Right-click on project 'ScrapeKit' under Solution Explorer and select Manage NuGet Packages.
-2. Click on Browse search for the below pakages and install.
+1. Right-click on the project 'ScrapeKit' under Solution Explorer and select Manage NuGet Packages.
+2. Click Browse, search for the packages below, and install.
 
 ```
 Microsoft.Office.Interop.Outlook" Version="15.0.4797.1004"
@@ -37,7 +37,7 @@ System.DirectoryServices.AccountManagement" Version="7.0.0"
 
 `TargetFramework > net6.0`
 
-Compile then execute with either PowerShell, CMD or if you have physical access simply double click it.
+Compile then execute with either PowerShell or CMD, or if you have physical access, double click it.
 The following menu screen will load.
 
 ```
@@ -51,9 +51,9 @@ The Sharp implementation of the tool will pull the domain from environmental var
 
 ### Example Option 1 using the default keywords
 
-After selecting option 1 you will be requested to add a destination email address, all matches will be forwarded to the added address.
+After selecting option 1, you will be requested to add a destination email address, all matches will be forwarded to the added address.
  
-```Please select an option:
+``` Please select an option:
 1. Run Outlook Email Search
 2. Run Active Directory Keyword Search
 3. Exit
@@ -66,7 +66,7 @@ Matching email found. Forwarded the email information to dhfrdfdg@REDACTED.com
 ```
 
 
-### Example Option 1 using user defined keywords
+### Example Option 1 using user-defined keywords
 
 You can select the default keywords or add your own keywords by selecting N at the prompt.
 
@@ -114,7 +114,7 @@ password: test1
 
 ### What it is
 
-PSScrapeKit is a powershell implementation of ScrapeKit, it consists of two files; DCScraper & OutlookScrape. Each has a specific function for scraping either a DC or Outlook. The outlook scraper will connect to the user's outlook client, search for keywords then queue up any interesting emails and send to an email of your choosing. Whereas the DC one will connect to sysvol and look for specific keywords or a default list.
+PSScrapeKit is a PowerShell implementation of ScrapeKit, it consists of two files; DCScraper & OutlookScrape. Each has a specific function for scraping either a DC or Outlook. The Outlook scraper will connect to the user's Outlook client, search for keywords then queue up any interesting emails and send to an email of your choosing. Whereas the DC one will connect to sysvol and look for specific keywords or a default list.
 
 - DCScrape.ps1
 - OutlookScrape.ps1
