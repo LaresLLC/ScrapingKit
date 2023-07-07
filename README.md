@@ -1,5 +1,5 @@
 # ScrapingKit
-## v1.01 Release
+## v1.5 Release
 Brought to you by [Neil Lines](https://twitter.com/myexploit2600) & [Andy Gill](https://twitter.com/ZephrFish) at [Lares Labs](https://labs.lares.com).
 ![image](https://github.com/LaresLLC/ScrapingKit/assets/5783068/4655e287-cc3c-480c-97a7-e280c9fcb149)
 
@@ -145,6 +145,34 @@ Simply select an option then specify an email and the rest will queue up and do 
 ![image](https://github.com/LaresLLC/ScrapingKit/assets/5783068/870ff5d6-2380-4d4f-956b-71f16267feb2)
 ![image](https://github.com/LaresLLC/ScrapingKit/assets/5783068/1357b27c-bad5-453b-b4cf-ed244d39d21d)
 
+### Domain Scrape
+***Invoke-Scrape.ps1***
+
+
+Offers users the following 2 options. 
+
+
+Scrape the Domain Controller - This option will only scrape NETLOGON and SYSVOL directories.
+Scrape all Domain Shares - This option only scrapes NETLOGON on the DC and then all other readable available domain shares.
+
+SYSVOL contains Group Policies (GPP), if you don’t want to manually review them use option 1.
+
+
+
+***Invoke-NetShareScrape.ps1***
+
+Used to hunt for keywords in files stored across network shares, Invoke-NetShareScrape.ps1 will enumerate all shares the user that executed can access, and then scrape the following file doc formats .txt|\.ini|\.xml|\.bat|\.ps1|\.doc|\.docx|\.xlsx|\.xls for the user defined keywords.
+
+
+```
+PS C:\> powershell.exe -nop -exec bypass
+PS C:\> Import-Module Invoke-NetShareScrape.ps1
+PS C:\> Invoke-NetShareScrape
+
+Enter initial keyword (or press enter to finish):
+cat
+Enter additional keyword (or press enter to finish):
+```
 
 ## Future Plans
 - Share Scraping Module, similar to snaffler but more opsec safe
